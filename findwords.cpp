@@ -4,7 +4,7 @@
 using namespace std;
 const int cols = 16, rows = 15;
 
- char words[rows][cols] =	     {"tgbwwinterwsesn",
+ char words[rows][cols] =	{"tgbwwinterwsesn",
                                 "aaunttmmhfoodnb",
                                 "jlwcqldzmpmvdmr",
                                 "asagmquwvvbsohi",
