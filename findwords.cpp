@@ -4,7 +4,7 @@
 using namespace std;
 const int cols = 16, rows = 15;
 
- char words[rows][cols] =	{"tgbwwinterwsesn",
+ char words[rows][cols] = {"tgbwwinterwsesn",
                                 "aaunttmmhfoodnb",
                                 "jlwcqldzmpmvdmr",
                                 "asagmquwvvbsohi",
@@ -42,15 +42,12 @@ int main()
 }
 
 bool searchHorizontal(char *kata){
-    int a;
     char *simpan;
     for(int i = 0; i < rows; i++){
     	simpan = *(words+i);
         if(strstr(simpan, kata)){
             return true;
-        }else{
-            a = 0;
         }
     }
-    return a;
+    return false;
 }
