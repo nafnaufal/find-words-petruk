@@ -22,7 +22,7 @@ const int cols = 16, rows = 15;
 
 char *getWordVertical(int);
 char *reverse(char *);
-bool searchVertical(char *); //bisa
+bool searchVertical(char *kata2); //bisa
 bool searchHorizontal(char *kata); //bisa
 
 int main()
@@ -51,3 +51,15 @@ bool searchHorizontal(char *kata){
     }
     return false;
 }
+
+bool searchVertical(char *kata2){
+	   char *save;
+	   for (int i=0; i<cols; i++){
+	   	save = *(words+15);
+		     if (strstr(save, kata2)){
+			         return true;
+		     }
+	}
+	return false;
+}
+ 
